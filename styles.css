@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --primary-color:#000000;
+    --second-color: white;
+    --colorP:black;
+    --colorS:#444;
+    --colorA:#999;
+    --colorBS:#f1f1f1;
+}
 
 body {
     min-height: 100vh;
@@ -16,28 +24,34 @@ a {
 li {
     list-style: none;
 }
-
+.brand-name{
+    margin: 42px;
+}
+.brand-name h1 {
+    font-size: 27px;
+    color: red;
+}
 h1,
 h2 {
-    color: #444;
+    color: var(--colorS);
 }
 
 h3 {
-    color: #999;
+    color: var(--colorA);
 }
 
 .btn {
-    background: #f05462;
-    color: white;
+    background: var(--primary-color);
+    color: var(--second-color);
     padding: 5px 10px;
     text-align: center;
 }
 
 .btn:hover {
-    color: #f05462;
-    background: white;
+    color: var(--primary-color);
+    background:var(--second-color);
     padding: 3px 8px;
-    border: 2px solid #f05462;
+    border: 2px solid var(--primary-color);
 }
 
 .title {
@@ -45,7 +59,7 @@ h3 {
     align-items: center;
     justify-content: space-around;
     padding: 15px 10px;
-    border-bottom: 2px solid #999;
+    border-bottom: 2px solid var(--colorA);
 }
 
 table {
@@ -60,7 +74,7 @@ td {
 
 .side-menu {
     position: fixed;
-    background: #f05462;
+    background: var(--primary-color);
     width: 20vw;
     min-height: 100vh;
     display: flex;
@@ -77,14 +91,14 @@ td {
 .side-menu li {
     font-size: 24px;
     padding: 10px 40px;
-    color: white;
+    color: var(--second-color);
     display: flex;
     align-items: center;
 }
 
 .side-menu li:hover {
-    background: white;
-    color: #f05462;
+    background: var(--second-color);
+    color: var(--primary-color);
 }
 
 .container {
@@ -92,7 +106,7 @@ td {
     right: 0;
     width: 80vw;
     height: 100vh;
-    background: #f1f1f1;
+    background: var(--colorBS);
 }
 
 .container .header {
@@ -101,7 +115,7 @@ td {
     right: 0;
     width: 80vw;
     height: 10vh;
-    background: white;
+    background: var(--second-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +137,7 @@ td {
 
 .container .header .nav .search input[type=text] {
     border: none;
-    background: #f1f1f1;
+    background: var(--colorBS);
     padding: 10px;
     width: 50%;
 }
@@ -172,7 +186,7 @@ td {
     position: relative;
     margin-top: 10vh;
     min-height: 90vh;
-    background: #f1f1f1;
+    background: var(--colorBS);
 }
 
 .container .content .cards {
@@ -186,7 +200,7 @@ td {
 .container .content .cards .card {
     width: 250px;
     height: 150px;
-    background: white;
+    background: var(--second-color);
     margin: 20px 10px;
     display: flex;
     align-items: center;
@@ -205,7 +219,7 @@ td {
 .container .content .content-2 .recent-payments {
     min-height: 50vh;
     flex: 5;
-    background: white;
+    background: var(--second-color);
     margin: 0 25px 25px 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
@@ -214,7 +228,7 @@ td {
 
 .container .content .content-2 .new-students {
     flex: 2;
-    background: white;
+    background: var(--second-color);
     min-height: 50vh;
     margin: 0 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -245,9 +259,9 @@ td {
         height: 40px;
     }
     .side-menu li:hover {
-        background: #f05462;
+        background: var(--primary-color);
         padding: 8px 38px;
-        border: 2px solid white;
+        border: 2px solid var(--second-color);
     }
 }
 
